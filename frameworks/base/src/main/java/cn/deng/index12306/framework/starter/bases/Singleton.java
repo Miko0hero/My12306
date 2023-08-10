@@ -1,4 +1,4 @@
-package cn.deng.index12306.framework.starter.bases.safa;
+package cn.deng.index12306.framework.starter.bases;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

@@ -6,14 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="index12306-base-spring-boot-stater" />
+        <module name="index12306-distributedid-spring-boot-starter" />
+        <module name="index12306-designpattern-spring-boot-starter" />
+        <module name="index12306-database-spring-boot-starter" />
         <module name="index12306-log-spring-boot-starter" />
+        <module name="index12306-idempotent-spring-boot-starter" />
+        <module name="index12306-web-spring-boot-starter" />
+        <module name="index12306-base-spring-boot-starter" />
+        <module name="index12306-convention-spring-boot-starter" />
+        <module name="index12306-common-spring-boot-starter" />
+        <module name="index12306-cache-spring-boot-starter" />
+        <module name="index12306-user-spring-boot-starter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="17" />
+      <module name="database" target="17" />
+      <module name="dependencies" target="1.6" />
       <module name="frameworks" target="17" />
-      <module name="index12306-web-spring-boot-starter" target="17" />
+      <module name="index12306-base-spring-boot-stater" target="17" />
+      <module name="index12306-idempotent-spring-boot-stater" target="17" />
       <module name="mytrain" target="1.5" />
       <module name="train" target="1.5" />
     </bytecodeTargetLevel>
@@ -21,10 +33,22 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="base" options="-parameters" />
+      <module name="database" options="-parameters" />
       <module name="frameworks" options="-parameters" />
+      <module name="index12306-base-spring-boot-starter" options="-parameters" />
       <module name="index12306-base-spring-boot-stater" options="-parameters" />
+      <module name="index12306-bizs-spring-boot-starter" options="" />
+      <module name="index12306-cache-spring-boot-starter" options="-parameters" />
+      <module name="index12306-common-spring-boot-starter" options="-parameters" />
+      <module name="index12306-convention-spring-boot-starter" options="-parameters" />
+      <module name="index12306-database-spring-boot-starter" options="-parameters" />
+      <module name="index12306-designpattern-spring-boot-starter" options="-parameters" />
+      <module name="index12306-distributedid-spring-boot-starter" options="-parameters" />
       <module name="index12306-frameworks" options="" />
+      <module name="index12306-idempotent-spring-boot-starter" options="-parameters" />
+      <module name="index12306-idempotent-spring-boot-stater" options="-parameters" />
       <module name="index12306-log-spring-boot-starter" options="-parameters" />
+      <module name="index12306-user-spring-boot-starter" options="-parameters" />
       <module name="index12306-web-spring-boot-starter" options="-parameters" />
       <module name="mytrain" options="" />
     </option>

@@ -8,8 +8,8 @@
         <artifactId>index12306-frameworks</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <artifactId>index12306-base-spring-boot-stater</artifactId>
+    <groupId>cn.deng</groupId>
+    <artifactId>index12306-base-spring-boot-starter</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

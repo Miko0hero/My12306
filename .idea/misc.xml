@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/frameworks/pom.xml" />
         <option value="$PROJECT_DIR$/frameworks/base/pom.xml" />
         <option value="$PROJECT_DIR$/frameworks/log/pom.xml" />
+        <option value="$PROJECT_DIR$/dependencies/pom.xml" />
       </list>
     </option>
   </component>

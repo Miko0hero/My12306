@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.2</version>
+        <version>3.0.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.deng</groupId>
@@ -15,9 +15,15 @@
     <description>仿12306车票销售系统</description>
     <modules>
         <module>frameworks</module>
+        <module>dependencies</module>
     </modules>
     <properties>
         <java.version>17</java.version>
+        <spotless-maven-plugin.version>2.22.1</spotless-maven-plugin.version>
+        <skip.checkstyle.check>true</skip.checkstyle.check>
+        <maven-checkstyle-plugin.version>3.1.0</maven-checkstyle-plugin.version>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
@@ -27,6 +33,11 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -40,8 +51,20 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.0.7</version>
             </plugin>
         </plugins>
     </build>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.deng</groupId>
+                <artifactId>index12306-dependencies</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
