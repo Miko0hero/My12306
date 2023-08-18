@@ -62,8 +62,10 @@ public class SpELUtil {
         DefaultParameterNameDiscoverer discoverer = new DefaultParameterNameDiscoverer();
         ExpressionParser parser = new SpelExpressionParser();
         Expression exp = parser.parseExpression(spEl);
+        //获取方法的参数名
         String[] params = discoverer.getParameterNames(method);
         StandardEvaluationContext context = new StandardEvaluationContext();
+        //将参数名与参数的具体值放到上下文中
         if (ArrayUtil.isNotEmpty(params)) {
             for (int len = 0; len < params.length; len++) {
                 context.setVariable(params[len], contextObj[len]);

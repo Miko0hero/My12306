@@ -1,7 +1,7 @@
 package cn.deng.index12306.framework.starter.common.threadpool.build;
 
 import cn.deng.index12306.framework.starter.common.toolkit.Assert;
-import cn.deng.index12306.framework.stater.designpattern.builder.Builder;
+import cn.deng.index12306.framework.starter.designpattern.builder.Builder;
 
 import java.math.BigDecimal;
 import java.util.concurrent.*;
